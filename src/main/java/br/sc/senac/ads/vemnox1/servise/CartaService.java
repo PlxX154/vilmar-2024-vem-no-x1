@@ -18,8 +18,11 @@ public class CartaService {
 		return cartaRepository.findAll();
 	}
 	
-	public Carta consultarPorId(int id) {
+	public Carta pesquisarPorId(int id) {
 		return cartaRepository.findById(id).get();
 	}
 
+	public Carta inserir(Carta novaCarta) {
+		return cartaRepository.save(novaCarta);
+	}
 }
