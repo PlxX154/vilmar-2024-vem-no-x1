@@ -1,4 +1,4 @@
-package br.sc.senac.ads.vemnox1.servise;
+package br.sc.senac.ads.vemnox1.service;
 
 import java.util.List;
 

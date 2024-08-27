@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.sc.senac.ads.vemnox1.model.entity.Carta;
-import br.sc.senac.ads.vemnox1.servise.CartaService;
+import br.sc.senac.ads.vemnox1.service.CartaService;
 import jakarta.websocket.server.PathParam;
 
 @RestController
