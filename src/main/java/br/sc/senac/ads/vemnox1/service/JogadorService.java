@@ -5,9 +5,9 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import br.sc.senac.vemnox1.exception.VemNoX1Exception;
-import br.sc.senac.vemnox1.model.entity.Jogador;
-import br.sc.senac.vemnox1.model.repository.JogadorRepository;
+import br.sc.senac.ads.vemnox1.model.entity.Jogador;
+import br.sc.senac.ads.vemnox1.model.repository.JogadorRepository;
+
 
 @Service
 public class JogadorService {

@@ -8,17 +8,19 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.sc.senac.ads.vemnox1.model.entity.Jogador;
+import br.sc.senac.ads.vemnox1.service.JogadorService;
 
 @RestController
 @RequestMapping(path = "/api/jogador")
 public class JogadorController {
 	
 	@Autowired
-	private JogadorService JogadorService;
+	private JogadorService jogadorService;
 
 	@GetMapping
 	public List<Jogador> pesquisarTodos(){
-		List<Jogador> cartas = JogadorService.pesquisarTodos();
+		List<Jogador> cartas = jogadorService.pesquisarTodos();
+		
 		return cartas;
 	}
 }
