@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import br.sc.senac.ads.vemnox1.model.entity.Jogador;
 import br.sc.senac.ads.vemnox1.model.repository.JogadorRepository;
+import br.sc.senac.ads.vemonox1.exception.Vemnox1Exception;
 
 
 @Service
@@ -29,10 +30,10 @@ public class JogadorService {
 		return repository.save(novoJogador);
 	}
 
-	public Jogador atualizar(Jogador jogadorAtualizado) throws VemNoX1Exception {
+	public Jogador atualizar(Jogador jogadorAtualizado) throws Vemnox1Exception {
 		
 		if(jogadorAtualizado.getId() == null) {
-			throw new VemNoX1Exception("Informe o ID");
+			throw new Vemnox1Exception("Informe o ID");
 		}
 		
 		return repository.save(jogadorAtualizado);

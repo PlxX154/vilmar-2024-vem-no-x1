@@ -1,6 +1,5 @@
 package br.sc.senac.ads.vemnox1.model.entity;
 
-
 import java.time.LocalDate;
 
 import jakarta.persistence.Column;
@@ -15,7 +14,7 @@ import lombok.Data;
 public class Jogador {
 	
 	@Id
-	@GeneratedValue (strategy = GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 	
 	@Column(nullable = false)
